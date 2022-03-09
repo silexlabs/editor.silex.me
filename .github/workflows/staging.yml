@@ -15,4 +15,5 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "silex-editor-preprod"
           heroku_email: "a.hoyau@silexlabs.org"
+          remote_branch: "master"
 
