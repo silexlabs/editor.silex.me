@@ -33,6 +33,7 @@ jobs:
             captain-definition
             dist/
             node_modules/
+            package.json
             Dockerfile
             index.pug
             index.js
