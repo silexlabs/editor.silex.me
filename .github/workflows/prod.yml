@@ -30,9 +30,13 @@ jobs:
           command: c
           cwd: "./"
           files: |
-            backend/
-            frontend/dist/
             captain-definition
+            dist/
+            Dockerfile
+            index.js
+            env.js
+            sentry.js
+            package.json
           outPath: deploy.tar
 
       - uses: caprover/deploy-from-github@v1.0.1
