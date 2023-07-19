@@ -31,14 +31,9 @@ jobs:
           cwd: "./"
           files: |
             captain-definition
-            dist/
             node_modules/
             package.json
             Dockerfile
-            index.pug
-            index.js
-            env.js
-            sentry.js
           outPath: deploy.tar
 
       - uses: caprover/deploy-from-github@v1.0.1
