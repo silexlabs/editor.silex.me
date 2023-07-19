@@ -1,4 +1,4 @@
-name: Publish to editor.silex.me
+name: Publish to CapRover
 on:
   push:
     tags:
@@ -34,6 +34,9 @@ jobs:
             node_modules/
             package.json
             Dockerfile
+            .silex.js
+            client-config.js
+            .nvmrc
           outPath: deploy.tar
 
       - uses: caprover/deploy-from-github@v1.0.1
