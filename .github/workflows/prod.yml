@@ -37,6 +37,8 @@ jobs:
             .silex.js
             client-config.js
             .nvmrc
+            client-plugins
+            server-plugins
           outPath: deploy.tar
 
       - uses: caprover/deploy-from-github@v1.0.1
