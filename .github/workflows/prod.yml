@@ -39,6 +39,7 @@ jobs:
             .nvmrc
             client-plugins
             server-plugins
+            onboarding.json
           outPath: deploy.tar
 
       - uses: caprover/deploy-from-github@v1.0.1
