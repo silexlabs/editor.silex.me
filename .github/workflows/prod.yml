@@ -49,4 +49,4 @@ jobs:
         with:
           server: '${{ secrets.CAPROVER_SERVER }}'
           app: ${{ github.ref == 'refs/heads/main' && secrets.MAIN_APP_NAME || secrets.APP_NAME }}
-          token: '${{ secrets.APP_TOKEN }}'
+          token: ${{ github.ref == 'refs/heads/main' && secrets.MAIN_APP_TOKEN || secrets.APP_TOKEN }}
